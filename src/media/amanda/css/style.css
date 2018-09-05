@@ -1,0 +1,201 @@
+/*
+
+  @ elements
+
+    ### 01. Typography
+    ### 02. Images
+    ### 03. Elements
+    ### 04. Responsive
+    ### 05. Colors
+
+  @ main colors
+
+    normal: #266295 -> rgba(38, 98, 149, 1);
+    light: #5685ac;
+    dark: #214e73;
+    accent: #98bccc;
+
+*/
+
+/* ###################################################### */
+/* ### 01. Typography */
+/* ###################################################### */
+
+@font-face {
+  font-family: 'Marck Script';
+  src: url('../fonts/MarckScript-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#top > .mark-script-white {
+  font-size: 32px;
+}
+
+#chat-side-text .mark-script-white {
+  font-size: 24px !important;
+}
+
+span.mark-script {
+  padding:10px;
+  font-family: 'Marck Script';
+  line-height: 1.2em;
+}
+
+/* ###################################################### */
+/* ### 02. Images */
+/* ###################################################### */
+
+body {
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.col-md-3 img.fadeout:first-of-type {
+  width: 0;
+  height: 200px;
+  padding-left: 200px;
+  background: transparent url('../images/amanda-profile-large.png') center center no-repeat;
+  background-size: 100% auto;
+}
+
+.col-md-3 img.fadeout:last-of-type {
+  width: 0;
+  height: 200px;
+  padding-left: 200px;
+  background: transparent url('../images/logo_white.svg') center bottom no-repeat;
+  background-size: 75% auto;
+}
+
+/* ###################################################### */
+/* ### 03. Elements */
+/* ###################################################### */
+
+body,
+html {
+  min-height: 100%;
+}
+
+#prelanderform {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  padding-bottom: 150px;
+}
+
+#prelanderform:after {
+  content: '';
+  width: 100%;
+  height: 125px;
+  /*background: #000 url('footer.png') bottom right no-repeat;*/
+  background-size: auto 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+header#top {
+  padding:10px;
+  height: auto;
+  border-bottom: 2px solid #000;
+  background: #000;
+  margin-bottom: 50px;
+}
+
+#top > .mark-script-white {
+  display: block;
+  width: 100% !important;
+  padding: 15px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.chat-footer2 {
+  display: none;
+}
+
+#chat-header-text {
+  margin: 1px 0 0 10px;
+}
+
+/* ###################################################### */
+/* 04. Responsive */
+/* ###################################################### */
+
+@media (max-width: 1200px) {
+
+  #chat-header-text {
+    margin: -1px 0 0 15px;
+  }
+
+  .chat-header img {
+    height: 34px;
+    padding-left: 411px;
+  }
+
+}
+
+@media (max-width: 990px) {
+
+  #chat-header-text {
+    margin: 4px 0 0 110px;
+  }
+
+  .chat-header img {
+    height: 44px;
+    padding-left: 535px;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  #chat-header-text {
+    margin-left: inherit;
+  }
+
+}
+
+@media (max-width: 540px) {
+
+  #chat-header-text {
+    margin: inherit;
+  }
+
+  .chat-header img {
+    padding-left: 0;
+    width: auto;
+    height: auto;
+    background: none;
+  }
+
+}
+
+/* ###################################################### */
+/* ### 05. Colors */
+/* ###################################################### */
+
+body {
+  background-color: #214e73;
+}
+
+#prelanderform:after {
+  background-color: #266295;
+}
+
+header#top {
+  background-color: #266295;
+  border-bottom-color: #214e73;
+}
+
+.timer {
+  border-color: #266295;
+}
+
+.timer .timer-body {
+  background-color: #266295;
+}
+
+.timer .timer-header {
+  background-color: #214e73;
+}

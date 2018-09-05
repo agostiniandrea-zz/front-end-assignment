@@ -1,0 +1,9 @@
+.left-from-header-text {
+    height: 50px;
+    background: transparent url('images/xmas-ribbon.png') right center  no-repeat;
+}
+
+.right-from-header-text {
+    height: 50px;
+    background: transparent url('images/xmas-ribbon.png')  left center no-repeat;
+}

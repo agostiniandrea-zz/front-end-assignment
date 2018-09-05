@@ -1,0 +1,21 @@
+{
+    "user": {
+        "description": "Amanda",
+        "divisionCode": "US",
+        "userCode": "MUS1"
+    },
+    "text": [
+        {
+            "question": "Insert your name",
+            "answer": null
+        },
+        {
+            "question": "Are you female?",
+            "answer": null
+        },
+        {
+            "question": "Insert your email",
+            "answer": null
+        }
+    ]
+}
